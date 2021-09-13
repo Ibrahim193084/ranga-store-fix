@@ -18,10 +18,13 @@ const showProducts = (products) => {
       <h3>${product.title}</h3>
       <p>Category: ${product.category}</p>
       <h2>Price: $ ${product.price}</h2>
+      <h6>${product.rating.rate}<span id = "icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span></h6>
+      <h6>${product.rating.count} reviews</h6>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
       <button id="details-btn" class="btn btn-danger">Details</button></div>
       `;
-    document.getElementById("all-products").appendChild(div);
+    const totalProducts = document.getElementById("all-products");
+    totalProducts.appendChild(div)
   }
 };
 let count = 0;
@@ -78,4 +81,4 @@ const updateTotal = () => {
 };
 
 
-loadProducts();
+// loadProducts();
