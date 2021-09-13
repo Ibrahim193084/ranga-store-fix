@@ -29,7 +29,9 @@ body {
   transition: 0.6s;
   border-radius: 10px;
   background-color: rgb(246, 247, 248);
-  margin: 5px;
+  margin: 15px;
+  height: 450px;
+  width: auto;
 }
 /* single product hover */
 .single-product:hover {
@@ -39,8 +41,8 @@ body {
 }
 /* product image */
 .product-image {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
 }
 /* font awesome icon */
 #icon{
