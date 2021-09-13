@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>E shop</title>
   <link rel="stylesheet" href="./css/style.css" />
+  <!-- faveicon -->
   <link rel="shortcut icon" href="images/img1.png" type="image/x-icon">
   <!-- Latest compiled and minified CSS -->
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -22,23 +23,27 @@
 </head>
 
 <body>
-  <header></header>
-  <main class="main">
+  <!-- header start -->
+  <header>
     <!-- search box -->
     <div class="input-group mb-3 w-50 mx-auto my-5">
       <input id="input-field" type="text" class="form-control p-2" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
-      <button onclick="loadProducts()" class="btn btn-dark border-0" type="button" id="search-btn"><i class="fas fa-search"></i></button>
+      <button onclick="loadProducts()" class="btn btn-primary border-0" type="button" id="search-btn"><i class="fas fa-search"></i></button>
     </div>
-
-
-
+  </header>
+  <!-- header end -->
+  <!-- main start -->
+  <main class="main">
     <div class="row">
       <div class="col-md-9 col-lg-9 col-sm-7">
+        <!-- display all products -->
         <div id="all-products" class="">
         </div>
       </div>
+      <!-- cart box -->
       <div class="col-md-3 col-lg-3 col-sm-5 cart-main">
         <div class="cart" id="my-cart">
+          <!-- cart table -->
           <table class="table">
             <thead>
               <h1>My-Cart</h1>
@@ -50,30 +55,35 @@
               </tr>
             </thead>
             <tbody>
+              <!-- total added products -->
               <tr>
                 <th>Total Added-Products:</th>
                 <td><span id="total-Products">0</span></td>
                 <td></td>
                 <td></td>
               </tr>
+              <!-- product price -->
               <tr>
                 <th>Price:</th>
                 <td>$ <span id="price">0</span></td>
                 <td></td>
                 <td></td>
               </tr>
+              <!-- delivery charge -->
               <tr>
                 <th>Delivery-Charge:</th>
                 <td>$ <span id="delivery-charge">20</span></td>
                 <td></td>
                 <td></td>
               </tr>
+              <!-- total tax -->
               <tr>
                 <th>Total-Tax:</th>
                 <td>$ <span id="total-tax">0</span></td>
                 <td></td>
                 <td></td>
               </tr>
+              <!-- total price  -->
               <tr>
                 <th scope="row">Total</th>
                 <td colspan="2">$ <span id="total">0</span></td>
@@ -82,6 +92,7 @@
             </tbody>
           </table>
           <div class="parces text-center">
+            <!-- buy now button -->
             <button class="btn btn-primary text-center">Buy Now</button>
           </div>
         </div>
